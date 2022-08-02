@@ -1,0 +1,31 @@
+header {
+    margin-bottom: 20px;
+    background: rgba(1, 1, 109, 0.87);
+    color:white;
+    padding: 10px;
+    
+}
+
+.conteiner {
+    margin: 20px;
+}
+
+#addStuent {
+    max-width: 500px;
+}
+
+.searchName {
+    font-size: 30px;
+}
+
+.search {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.tableDiv {
+    min-height: 500px;
+
+}

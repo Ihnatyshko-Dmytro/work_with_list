@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Students</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./JS/Student.js"></script>
+    <script defer src="./JS/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Список студентов</h1>
+    </header>
+    <div class="conteiner">
+        <div>
+            <form id="addStuent">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" id="name" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="surname" class="form-label">Фамилия</label>
+                    <input type="text" id="surname" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Отчество</label>
+                    <input type="text" id="lastname" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="birthDate" class="form-label">Дата рождения</label>
+                    <input type="date" id="birthDate" class="form-control" min="1900-01-01" max="">
+                </div>
+
+                <div class="mb-3">
+                    <label for="startDate" class="form-label">Дата начала обучения</label>
+                    <input type="date" id="startDate" class="form-control" min="2000-01-01" max="">
+                </div>
+
+                <div class="mb-3">
+                    <label for="faculty" class="form-label">Факультет</label>
+                    <input type="text" id='faculty' class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Добавить</button>
+            </form>
+        </div>
+
+        <div class="search">
+            <div class="searchName">Поиск</div>
+            <label for="fioS">ФИО</label>
+            <input type="text" id="fioS" class="form-control" data-column="fio">
+
+            <label for="facultyS">Факультет</label>
+            <input type="text" id="facultyS" class="form-control" data-column="faculty">
+
+            <label for="birthDateS">Дата рождения</label>
+            <input type="date" id="birthDateS" class="form-control" data-column="birthDate">
+
+            <label for="startDateS">Дата начала обучения</label>
+            <input type="date" id="startDateS" class="form-control" data-column="startDate">
+        </div>
+
+        <div class="tableDiv">
+            <table class="table table-striped">
+                <thead id="thead">
+                    <th data-column="fio">ФИО</th>
+                    <th data-column="faculty">Факультет</th>
+                    <th data-column="birthDate">Дата рождения и возраст</th>
+                    <th data-column="startDate">Годы обучения и номер курса</th>
+                </thead>
+                <tbody id="student-list">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
